@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <PackageId>InfinityString</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Jean Lourenço</Authors>
+    <Title>InfinityString</Title>
+    <Description>Class for infinity iterations on strings, either by indexing ou enumeration.</Description>
+    <Copyright>Copyright 2017</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/jean-lourenco/InfinityString</PackageProjectUrl>
+    <PackageTags>string util</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <RootNamespace>InfinityStringLib</RootNamespace>
+  </PropertyGroup>
+
+</Project>
