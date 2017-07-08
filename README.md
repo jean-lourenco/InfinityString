@@ -1,5 +1,5 @@
 # InfinityString
-C# class for infinity iterations on strings, either by indexing ou enumeration.
+[InfinityString](https://www.nuget.org/packages/InfinityString/) is a C# struct for infinity iterations on strings, either by indexing ou enumeration.
 
 ``` csharp
 using InfinityStringLib;
