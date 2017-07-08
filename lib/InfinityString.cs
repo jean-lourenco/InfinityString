@@ -29,9 +29,6 @@ namespace InfinityStringLib
                     index = index % TrueLength;
 
                 return Value[index];
-
-                // checar pq não funciona
-                //return Value[new IntControlledOverflow(index, TrueLength-1)];
             }
         }
 
