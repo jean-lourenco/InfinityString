@@ -38,6 +38,8 @@ Under the hoods, the InfinityString class is a struct, but in practice it behave
 ``` csharp
     InfinityString infinity = "batatinha";
     string word = infinity;
+    
+    Console.Write(infinity == word); // true    
 ```
 
 If you want to access the original value directly, just use the .Value property:
