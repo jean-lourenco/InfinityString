@@ -15,9 +15,9 @@ As the name implies, the InfinityString struct turns an ordinary string into a e
 ``` csharp
     var infinity = new InfinityString("batatinha");
 
-    // This runs till i == Int32.MaxValue
+    // This runs till word == Int32.MaxValue
     // If you want the base word length, use .TrueLength
-    for (var i = 0; i < infinity.Length; i++)
+    for (var word = 0; word < infinity.Length; i++)
     {
         Console.Write(infinity[word]);
     }
