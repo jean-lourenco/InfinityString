@@ -1,4 +1,4 @@
-# InfinityString
+# InfinityString [![Build Status](https://travis-ci.org/jean-lourenco/InfinityString.svg?branch=master)](https://travis-ci.org/jean-lourenco/InfinityString)
 [InfinityString](https://www.nuget.org/packages/InfinityString/) is a C# struct for infinity iterations on strings, either by indexing ou enumeration.
 
 ``` csharp
