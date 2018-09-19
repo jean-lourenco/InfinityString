@@ -1,7 +1,6 @@
+using InfinityStringLib;
 using System;
 using System.Linq;
-using System.Text;
-using InfinityStringLib;
 using Xunit;
 
 namespace InfinityStringTest
@@ -36,10 +35,10 @@ namespace InfinityStringTest
             var expected = $"{baseWord}{baseWord}{baseWord}";
             var index = 0;
 
-            foreach (var wordPair in expected.Zip(infinity, (v1, v2) => new { Expected = v1, Infinity = v2}))
+            foreach (var wordPair in expected.Zip(infinity, (v1, v2) => new { Expected = v1, Infinity = v2 }))
             {
                 Assert.Equal(wordPair.Expected, wordPair.Infinity);
-                                
+
                 if (++index == expected.Length)
                     break;
             }
@@ -63,9 +62,7 @@ namespace InfinityStringTest
         }
 
         [Fact]
-        public void InfinityString_Should_Not_Accept_Null_Values()
-        {
+        public void InfinityString_Should_Not_Accept_Null_Values() =>
             Assert.Throws<ArgumentNullException>(() => new InfinityString(null));
-        }
     }
 }

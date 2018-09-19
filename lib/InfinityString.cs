@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace InfinityStringLib
 {
@@ -18,7 +17,7 @@ namespace InfinityStringLib
 
             Value = baseString;
             TrueLength = Value.Length;
-            Length = Int32.MaxValue;
+            Length = int.MaxValue;
         }
 
         public char this[int index]
@@ -32,15 +31,11 @@ namespace InfinityStringLib
             }
         }
 
-        public static implicit operator string(InfinityString infinityString)
-        {
-            return infinityString.Value;
-        }
+        public static implicit operator string(InfinityString infinityString) =>
+            infinityString.Value;
 
-        public static implicit operator InfinityString(string value)
-        {
-            return new InfinityString(value);
-        }
+        public static implicit operator InfinityString(string value) =>
+            new InfinityString(value);
 
         public IEnumerator<char> GetEnumerator()
         {
@@ -55,17 +50,13 @@ namespace InfinityStringLib
             }
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
+        IEnumerator IEnumerable.GetEnumerator() =>
+            GetEnumerator();
 
-        public bool Equals(InfinityString infinityString)
-        {
-            return Value == infinityString.Value;
-        }
+        public bool Equals(InfinityString infinityString) =>
+            Value == infinityString.Value;
 
-        public override bool Equals(Object obj)
+        public override bool Equals(object obj)
         {
             switch (obj)
             {
@@ -80,14 +71,8 @@ namespace InfinityStringLib
             }
         }
 
-        public override int GetHashCode()
-        {
-            return Value.GetHashCode();
-        }
+        public override int GetHashCode() => Value.GetHashCode();
 
-        public override string ToString()
-        {
-            return Value;
-        }
+        public override string ToString() => Value;
     }
 }
